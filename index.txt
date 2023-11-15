@@ -1,0 +1,40 @@
+MENU ITEMS
+
+ 1. May Day -> sun outline icon
+ 2. Important -> star outline icon
+ 3. Planned -> calender outline icon
+ 4. All -> all inclusive outline icon
+ 5. Completed -> circle done outline icon
+ 6. Assign to me -> users outline icon
+ 7. Tasks -> home outline icon
+
+
+Colors
+
+ --bg-color: #11100F;
+ --sidebar-color: #252423;
+ --text-color: #FFFFFF;
+ --item-hover-color: #3B3A39;
+ --primary-color: #254DC5;
+ --completed-color: #E99690;
+ --success-color: #A3CD88;
+ --sky-blue-color: #B692E4;
+
+Font-family
+
+ --app-font: 'Roboto', sans-serif;
+
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+Font-sizes
+ 
+  --sidebar-fs: 1.4rem;
+  --title-fs: 2rem;
+  --sm-fs: 1.2rem;
+

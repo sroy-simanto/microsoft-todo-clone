@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Day - To Do</title>
+
+    <!--  
+        primary meta tag
+    -->
+    <meta name="title" content="Todo App">
+    <meta name="author" content="Simanto Roy">
+    <meta name="description" content="MS Todo App Clone">
+
+    <!--  
+        favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!--  
+        google fonts & icon
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!--  
+        custom stylesheet
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  
+        custom script
+    -->
+    <script src="./js/app.js"></script>
+
+</head>
+<body>
+    
+    <!--  
+        Top Header
+    -->
+
+    <header class="top-header" aria-label="top-header">
+
+        <div class="top-header-inner">
+
+            <!-- top header left -->
+            <div class="top-header-left">
+
+                <div class="header-left-apps-button">
+
+                    <button class="btn apps-button" id="apps-button">
+                        <span class="material-symbols-outlined">apps</span>
+                    </button>
+
+                    <div class="apps-button-dropdown" id="apps-dropdown">
+
+                        <div class="dropdown-header">
+                            
+                            <button class="btn apps-button" id="appBtn">
+                                <span class="material-symbols-outlined">apps</span>
+                            </button>
+
+                            <a href="./index.html" class="ms-apps-store">
+                                <h4>Microsoft 365</h4>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+
+                        </div>
+
+                        <div class="dropdown-body">
+
+                            <h3 class="lists-title">Apps</h3>
+
+                            <ul class="dropdown-lists">
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/outlook.png" alt="outlook icon">
+                                        <small>Outlook</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/onedrive.png" alt="onedrive icon">
+                                        <small>OneDrive</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/teams.png" alt="teams icon">
+                                        <small>Teams</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/word.png" alt="word icon">
+                                        <small>Word</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/excel.png" alt="excel icon">
+                                        <small>Excel</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/powerpoint.png" alt="powerpoint icon">
+                                        <small>PowerPoint</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/one-note.png" alt="OneNote icon">
+                                        <small>OneNote</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/family.png" alt="family icon">
+                                        <small>Family Safety</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/calendar.png" alt="calender icon">
+                                        <small>Calender</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/video-marketing.png" alt="video icon">
+                                        <small>Clipchamp</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/web-design.png" alt="design icon">
+                                        <small>Design</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/skype.png" alt="skype icon">
+                                        <small>Skype</small>
+                                    </a>
+                                </li>
+
+                                <li class="list-item">
+                                    <a href="#" class="list-link">
+                                        <img src="./images/icons/todo_badge.png" alt="skype icon">
+                                        <small>Todo</small>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <a href="./index.html" class="ms-apps-store">
+                                <h4>All Apps</h4>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <a href="./index.html" class="header-logo">
+                    Outlook
+                </a>
+
+                <div class="header-left-search-box search-box-sm">
+                    <button class="btn search-btn">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                    <input type="search" placeholder="Search">
+                </div>
+
+            </div>
+
+
+            <!-- top header middle -->
+            <div class="top-header-middle active">
+                <div class="header-middle-search-box">
+                    <button class="btn search-btn">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
+
+            <!-- top header right -->
+            <div class="top-header-right">
+
+                <div class="header-right-settings-button">
+
+                    <button class="btn settings-button" id="settings-btn">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+
+                    <div class="settings-button-dropdown" id="settings-drpdwn">
+
+                        <div class="dropdown-header">
+                            <h3>Settings</h3>
+                            <button class="btn close-btn">
+                                <span class="material-symbols-outlined">close</span>
+                            </button>
+                        </div>
+
+                        <div class="dropdown-body">
+
+                            <h5 class="title">General</h5>
+
+                            <div class="box">
+                                <label for="delete">Confirm before deleting</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="delete" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="delete">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="new_task">Add new task on top</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="new_task" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="new_task">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="starred_task">Move starred task to top</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="starred_task" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="starred_task">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="sound">Play completion sound</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="sound" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="sound">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="show_menu">Show rights click menu</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="show_menu" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="show_menu">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="notification">Turn on remainder notifications</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="notification" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="notification">On</label>
+                                </div>
+                            </div>
+                        
+                            <div class="box">
+                                <label for="important_task">Show tasks that seems important in My Day</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="important_task" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="important_task">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="theme_mode">Turn on night mode</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="theme_mode" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="theme_mode">On</label>
+                                </div>
+                            </div>
+
+
+                            <h5 class="title">Smart Lists</h5>
+
+                            <div class="box">
+                                <label for="important">Important</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="important" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="important">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="planned">Planned</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="planned" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="planned">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="all">All</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="all" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="all">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="completed">Completed</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="completed" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="completed">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="assign_to_me">Assign to me</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="assign_to_me" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="assign_to_me">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="auto_hide_empty_list">Auto hide empty smart lists</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="auto_hide_empty_list" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="auto_hide_empty_list">On</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <label for="due_task">Show 'Due Today' tasks in My Day</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="due_task" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="due_task">On</label>
+                                </div>
+                            </div>
+
+                            <h5 class="title">Connected Apps</h5>
+
+                            <div class="box">
+                                <label for="important">Planner</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="important" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="important">On</label>
+                                </div>
+                                <small>Tasks assign to you planner</small>
+                            </div>
+
+                            <h5 class="title">Notification</h5>
+
+                            <div class="box">
+                                <label for="email">Email</label>
+                                <div class="box-item">
+                                    <label class="switch">
+                                        <input type="checkbox" id="email" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="email">On</label>
+                                </div>
+                                <small>Get notified when a list is sharhed with you</small>
+                            </div>
+
+
+                            <h5 class="title">About</h5>
+
+                            <a href="./index.html">Privacy and cookies</a>
+                            <a href="./index.html">Export your info</a>
+                            <p>Used the todo web app is governed by the <br>
+                                <a href="./index.html"> Microsoft services agreement </a>
+                            </p>
+
+                            <strong><a href="./index.html">Third Party Notices</a></strong>
+
+                            <div class="copyright-card">
+                                <img src="./images/icons/todo_badge.png" width="80" height="80" alt="todo badge">
+                                <div class="content">
+                                    <h5>Microsoft To Do</h5>
+                                    <small>Copyright &copy; 2023 Simanto Roy</small>
+                                    <small>All right reserved</small>
+                                    <small>Version 2.98.2</small>
+                                </div>
+                            </div>
+
+                            <strong><a href="./index.html">Copy Session and User Id</a></strong>
+
+
+                            <h5 class="title">Connect</h5>
+
+                            <a href="./index.html" class="connect">
+                                <img src="./images/icons/twitter.png" width="24" height="24" alt="twitter img">
+                                <small>Follow us on Twitter</small>
+                            </a>
+                            <a href="./index.html" class="connect">
+                                <img src="./images/icons/facebook.png" width="24" height="24" alt="facebook img">
+                                <small>Like us on Facebook</small>
+                            </a>
+                            <a href="./index.html" class="connect">
+                                <img src="./images/icons/love.png" width="24" height="24" alt="twitter img">
+                                <small>Spread the word</small>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="header-right-help-button">
+
+                    <button class="btn help-button" id="help-btn">
+                        <span class="material-symbols-outlined">question_mark</span>
+                    </button>
+
+                    <div class="help-button-dropdown" id="help-drpdwn">
+
+                        <div class="dropdown-header">
+                            <h3>Help</h3>
+                            <button class="btn close-btn">
+                                <span class="material-symbols-outlined">close</span>
+                            </button>
+                        </div>
+
+                        <div class="dropdown-body">
+                            <a href="./index.html">Get support</a>
+                            <div class="uptodate">
+                                <button class="btn-primary">Sync</button>
+                                <p>Up to date</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="header-right-announce-button">
+
+                    <button class="btn announce-btn" id="announce-btn">
+                        <span class="material-symbols-outlined">campaign</span>
+                    </button>
+
+                    <div class="announce-button-dropdown" id="announce-drpdwn">
+
+                        <div class="dropdown-header">
+                            <h3>What's New</h3>
+                            <button class="btn close-btn">
+                                <span class="material-symbols-outlined">close</span>
+                            </button>
+                        </div>
+
+                        <div class="dropdown-body">
+
+                            <div class="announce-card">
+                                <img src="./images/icons/dark-mode-whats-new_dark.png" class="card-img" alt="card-image">
+                                <div class="card-content">
+                                    <p>Now you can change to Darkmode theme from settings!</p>
+                                    <button class="secondary-btn">Try it</button>
+                                </div>
+                            </div>
+
+                            <div class="announce-card">
+                                <img src="./images/icons/resizable-details-dark.png" class="card-img" alt="card-image">
+                                <div class="card-content">
+                                    <p>Now you can resize your details pane by dragging the edge of the pane</p>
+                                    <button class="secondary-btn">Try it</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dropdown-footer">
+                            <h5 class="content">Download the app</h5>
+                            <a href="./index.html">
+                                <img src="./images/icons/apple-logo.png" width="20" height="20" alt="apple-logo">
+                            </a>
+                            <a href="./index.html">
+                                <img src="./images/icons/windows.png" width="20" height="20" alt="windows-logo">
+                            </a>
+                            <a href="./index.html">
+                                <img src="./images/icons/android-logo.png" width="20" height="20" alt="android-logo">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="header-right-avatar-button">
+                    
+                    <button class="avatar-image" id="avatar-btn">
+                        <img src="./images/avatar.png" alt="avatar">
+                    </button>
+
+                    <div class="avatar-popovers" id="avatar-drpdwn">
+
+                        <div class="avatar-header">
+                            <div class="account">
+                                <img src="./images/icons/microsoft.png" width="20" height="20" alt="microsoft logo">
+                                <h5>Microsoft</h5>
+                            </div>
+
+                            <a href="./index.html">Sine Out</a>
+                        </div>
+
+                        <div class="avatar-body-card">
+                            <img src="./images/avatar.png" alt="avatar" class="card-img">
+                            <div class="card-content">
+                                <h4>Simanto Roy</h4>
+                                <h5>sroy.simanto@gmail.com</h5>
+                                <a href="./index.html">My Microsoft Account</a>
+                                <a href="./index.html">My Profile</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+
+    <!--  
+        MAIN CONTENT
+    -->
+
+    <main class="main-content">
+
+        <!--  
+            SIDEBAR
+        -->
+
+        <nav class="sidebar active">
+            <div class="sidebar-inner">
+
+                <button class="sidebar-menu-button" id="sidebar-menu-button">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+
+                <ul class="nav-items">
+
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">light_mode</span>
+                            <h3>My Day</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">star</span>
+                            <h3>Important</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            <h3>Planned</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">all_inclusive</span>
+                            <h3>All</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <h3>Completed</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">person</span>
+                            <h3>Assign to me</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">home</span>
+                            <h3>Tasks</h3>
+                        </a>
+                    </li>
+
+                    <div class="border"></div>
+
+                </ul>
+
+                <ul class="dynamic-nav-items">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-symbols-outlined">list</span>
+                            <h3>List</h3>
+                        </a>
+                    </li> 
+                    
+                    <li class="nav-group">
+                        <div class="nav-group-item">
+                            <span class="material-symbols-outlined">forms_add_on</span>
+                            <h3>Group</h3>
+                            <div class="icon-right">
+                                <span class="material-symbols-outlined right no-expand">chevron_left</span>
+                                <span class="material-symbols-outlined right expand active">expand_more</span>
+                            </div>
+                        </div>
+
+                        <div class="nav-group-dropdown">
+                            
+                            <ul class="group-dropdown-lists">
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="material-symbols-outlined">list</span>
+                                        <h3>List</h3>
+                                    </a>
+                                </li> 
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+                
+                <div class="sidebar-footer">
+                    <div class="footer-inner">
+
+                        <div class="footer-input">
+
+                            <div class="footer-input-group">
+                                <span class="material-symbols-outlined">forms_add_on</span>
+                                <input type="text" placeholder="Untitled group">
+                            </div>
+
+                        </div>
+
+                        <div class="footer-create-list-group">
+                            
+                            <div class="create-list">
+                                <span class="material-symbols-outlined">add</span>
+                                <input type="text" placeholder="New list">
+                            </div>
+                            
+                            <button class="create-group">
+                                <span class="material-symbols-outlined">forms_add_on</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </nav>
+
+
+        <!--  
+            ARTICLE
+        -->
+        <article>
+
+            <!--  
+                TASK BODY
+            -->
+            <section class="task-body">
+
+                <div class="task-body-inner">
+
+                    <!-- task body header -->
+
+                    <div class="task-body-header">
+
+                        <div class="body-header-left">
+
+                            <div class="body-header-left-inner">
+                                <span class="material-symbols-outlined">light_mode</span>
+                                <h3>My Day</h3>
+                                <div class="left-menu-btn">
+
+                                    <button class="menu-btn">
+                                        <span class="material-symbols-outlined">more_horiz</span>
+                                    </button>
+
+                                    <div class="left-menu-btn-dropdown" style="display: none;">
+                                        <h3>List Options</h3>
+                                        <hr>
+                                        <button class="print-btn">
+                                            <span class="material-symbols-outlined">print</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <small>Sunday, July 2</small>
+
+                        </div>
+
+                        <div class="body-header-right">
+
+                            <div class="header-right-btn">
+
+                                <div class="btn-with-text">
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">swap_vert</span>
+                                    </button>
+                                    <h3>Sort</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="header-right-btn">
+
+                                <div class="btn-with-text">
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">forms_add_on</span>
+                                    </button>
+                                    <h3>Group</h3>
+                                </div>
+                               
+                            </div>
+
+                            <div class="header-right-btn">
+
+                                <div class="btn-with-text">
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">lightbulb</span>
+                                    </button>
+                                    <h3>Suggestion</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- task body input -->
+
+                    <div class="task-body-input">
+                        
+                        <div class="task-body-input-inner">
+
+                            <div class="input-item">
+
+                                <span class="material-symbols-outlined">add</span>
+                                <input type="text" placeholder="Add a task">
+
+                            </div>
+
+                            <div class="input-tools">
+                                <button>
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </button>
+                                <button>
+                                    <span class="material-symbols-outlined">notifications</span>
+                                </button>
+                                <button>
+                                    <span class="material-symbols-outlined">undo</span>
+                                </button>
+                                <button class="left">
+                                    <h3>Add</h3>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- task body tasks list -->
+
+                    <div class="task-body-tasks-list">
+
+                        <ul class="tasks-list">
+
+                            <li class="task-item">
+                                <button class="task-icon">
+                                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                                </button>
+                                <div class="task-details">
+                                    <h3 class="task-name">Home Work</h3>
+                                    <small class="task-group">Tasks</small>
+                                </div>
+                                <button class="task-fav">
+                                    <span class="material-symbols-outlined">grade</span>
+                                </button>
+                            </li>
+
+                            <li class="task-item">
+                                <button class="task-icon">
+                                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                                </button>
+                                <div class="task-details">
+                                    <h3 class="task-name">Home Work</h3>
+                                    <small class="task-group">Tasks</small>
+                                </div>
+                                <button class="task-fav">
+                                    <span class="material-symbols-outlined">grade</span>
+                                </button>
+                            </li>
+
+                            <li class="task-item">
+                                <button class="task-icon">
+                                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                                </button>
+                                <div class="task-details">
+                                    <h3 class="task-name">Home Work</h3>
+                                    <small class="task-group">Tasks</small>
+                                </div>
+                                <button class="task-fav">
+                                    <span class="material-symbols-outlined">grade</span>
+                                </button>
+                            </li>
+
+                            <li class="task-item">
+                                <button class="task-icon">
+                                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                                </button>
+                                <div class="task-details">
+                                    <h3 class="task-name">Home Work</h3>
+                                    <small class="task-group">Tasks</small>
+                                </div>
+                                <button class="task-fav">
+                                    <span class="material-symbols-outlined">grade</span>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+</body>
+</html>

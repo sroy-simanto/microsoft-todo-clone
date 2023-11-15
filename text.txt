@@ -1,0 +1,51 @@
+colors:
+
+    #body
+    --body-background-color: #11100F;
+    --body-text-color: #fff;
+
+    #primary-btn
+    --btn-primary-background-color: #2461C8;
+    --btn-primary-text-color: #fff;
+
+    #header-left
+    --header-left_right-search-box-background-color: #252423;
+    --header-left_right-search-box-hover-background-color: #323130;
+
+    #search
+    --search-btn-text_icon-color: #76B8FD;
+
+    #top-header-dropdown
+    --top-header-dropdown-bg-color: #212121;
+    --top-header-dropdown-border-color: #fff;
+
+    #scrollbar
+    --scrollbar-thumb-bg-color: #6b6b6b;
+    --top-header-dropdown-close-btn-hover-color: #555555;
+
+    #sidebar
+    --sidebar-nav-items-hover-bg-color: #323130;
+    --sidebar-nav-items-active-bg-color: #3B3A39;
+    --sidebar-nav-items-border-color: #296FE6;
+
+    #top-header
+    --top-header-bg-color: #11100F;
+    --top-header-border-color: gray;
+
+    --header-left-apps-button-bg-color: #212121;
+    --dropdown-header-apps-store-heading-color: #46A0FD;
+    --dropdown-lists-bg-color: #3C3C3C;
+
+    --dropdown-box-item-slider-bg-color: #212121;
+    --dropdown-box-item-slider-border-color: #3C3C3C;
+
+    --dropdown-box-item-input-checked-bg-color:#2196F3;
+
+    --dropdown-box-small-text-color: #6b6b6b;
+    --settings-dropdown-box-link-text-color: #6BBADA;
+    --help-dropdown-box-link-text-color: #46A0FD;
+
+    --announce-card-bg-color: #252423;
+    --announce-card-button-border-color: #605e5c;
+    --announce-card-button-border-hover-color:#323130;
+    --announce-footer-border-color: #fff;
